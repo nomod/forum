@@ -1,0 +1,22 @@
+default: &default
+ host: localhost
+ adapter: postgresql
+ encoding: UTF8
+ username: forum_admin
+ timeout: 5000
+ reaping_frequency: 30
+
+development:
+  <<: *default
+  database: forum_development
+  password: forum_admin
+
+test:
+  <<: *default
+  database: forum_test
+  password: forum_admin
+
+production:
+  <<: *default
+  database: forum_production
+  password: forum_admin

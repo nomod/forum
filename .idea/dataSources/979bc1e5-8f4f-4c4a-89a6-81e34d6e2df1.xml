@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - forum_development@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="forum_development">
+      <object-id>27472</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="postgres">
+      <object-id>12379</object-id>
+    </database>
+    <database id="3" name="clinic_development">
+      <object-id>16509</object-id>
+    </database>
+    <database id="4" name="clinic_production">
+      <object-id>16510</object-id>
+    </database>
+    <database id="5" name="clinic_test">
+      <object-id>16995</object-id>
+    </database>
+    <database id="6" name="student_development">
+      <object-id>17335</object-id>
+    </database>
+    <database id="7" name="student_production">
+      <object-id>17336</object-id>
+    </database>
+    <database id="8" name="student_test">
+      <object-id>17337</object-id>
+    </database>
+    <database id="9" name="kvant_energy_development">
+      <object-id>17453</object-id>
+    </database>
+    <database id="10" name="kvant_energy_production">
+      <object-id>17454</object-id>
+    </database>
+    <database id="11" name="kvant_energy_test">
+      <object-id>17455</object-id>
+    </database>
+    <database id="12" name="foto_production">
+      <object-id>18571</object-id>
+    </database>
+    <database id="13" name="foto_development">
+      <object-id>18572</object-id>
+    </database>
+    <database id="14" name="foto_test">
+      <object-id>18573</object-id>
+    </database>
+    <database id="15" name="energycity_development">
+      <object-id>18980</object-id>
+    </database>
+    <database id="16" name="energycity_production">
+      <object-id>18981</object-id>
+    </database>
+    <database id="17" name="energycity_test">
+      <object-id>18982</object-id>
+    </database>
+    <database id="18" name="courses_development">
+      <object-id>19188</object-id>
+    </database>
+    <database id="19" name="courses_production">
+      <object-id>19189</object-id>
+    </database>
+    <database id="20" name="courses_test">
+      <object-id>19190</object-id>
+    </database>
+    <database id="21" name="forum_production">
+      <object-id>27473</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="22" name="forum_test">
+      <object-id>27474</object-id>
+    </database>
+    <schema id="23" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>387563</introspection-state-number>
+      <introspection-timestamp>2017-11-17.15:26:50.182</introspection-timestamp>
+    </schema>
+    <schema id="24" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+      <introspection-state-number>620</introspection-state-number>
+      <introspection-timestamp>2017-11-16.23:28:38.336</introspection-timestamp>
+    </schema>
+    <schema id="25" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="26" parent="1" name="pg_temp_1">
+      <object-id>11816</object-id>
+    </schema>
+    <schema id="27" parent="1" name="pg_toast_temp_1">
+      <object-id>11817</object-id>
+    </schema>
+    <schema id="28" parent="1" name="information_schema">
+      <object-id>12087</object-id>
+    </schema>
+    <sequence id="29" parent="23" name="marks_id_seq">
+      <object-id>27513</object-id>
+      <state-number>387537</state-number>
+    </sequence>
+    <sequence id="30" parent="23" name="posts_id_seq">
+      <object-id>27502</object-id>
+      <state-number>387536</state-number>
+    </sequence>
+    <sequence id="31" parent="23" name="users_id_seq">
+      <object-id>27521</object-id>
+      <state-number>387540</state-number>
+    </sequence>
+    <table id="32" parent="23" name="ar_internal_metadata">
+      <object-id>27483</object-id>
+      <state-number>387534</state-number>
+    </table>
+    <table id="33" parent="23" name="marks">
+      <object-id>27515</object-id>
+      <state-number>387563</state-number>
+    </table>
+    <table id="34" parent="23" name="posts">
+      <object-id>27504</object-id>
+      <state-number>387546</state-number>
+    </table>
+    <table id="35" parent="23" name="schema_migrations">
+      <object-id>27475</object-id>
+      <state-number>387533</state-number>
+    </table>
+    <table id="36" parent="23" name="users">
+      <object-id>27523</object-id>
+      <state-number>387540</state-number>
+    </table>
+    <column id="37" parent="32" name="key">
+      <state-number>387534</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="38" parent="32" name="value">
+      <state-number>387534</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="39" parent="32" name="created_at">
+      <state-number>387534</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="40" parent="32" name="updated_at">
+      <state-number>387534</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="41" parent="32" name="ar_internal_metadata_pkey">
+      <object-id>27489</object-id>
+      <columns>key</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="42" parent="32" name="ar_internal_metadata_pkey">
+      <object-id>27490</object-id>
+      <columns>key</columns>
+      <underlying-index>ar_internal_metadata_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="43" parent="33" name="id">
+      <state-number>387537</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;marks_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="44" parent="33" name="value">
+      <state-number>387537</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="45" parent="33" name="post_id">
+      <state-number>387537</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="46" parent="33" name="login">
+      <state-number>387563</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="47" parent="33" name="created_at">
+      <state-number>387537</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="48" parent="33" name="updated_at">
+      <state-number>387537</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="49" parent="33" name="marks_pkey">
+      <object-id>27519</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="50" parent="33" name="index_marks_on_post_id_and_user_id">
+      <object-id>27533</object-id>
+      <columns>post_id
+login</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="51" parent="33" name="index_marks_on_post_id_and_user_id">
+      <object-id>27541</object-id>
+      <columns>post_id
+login</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="52" parent="33" name="marks_pkey">
+      <object-id>27520</object-id>
+      <columns>id</columns>
+      <underlying-index>marks_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="53" parent="34" name="id">
+      <state-number>387536</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;posts_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="54" parent="34" name="header">
+      <state-number>387536</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="55" parent="34" name="content">
+      <state-number>387536</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="56" parent="34" name="login">
+      <state-number>387546</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="57" parent="34" name="user_ip">
+      <state-number>387536</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="58" parent="34" name="created_at">
+      <state-number>387536</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="59" parent="34" name="updated_at">
+      <state-number>387536</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="60" parent="34" name="posts_pkey">
+      <object-id>27511</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="61" parent="34" name="posts_pkey">
+      <object-id>27512</object-id>
+      <columns>id</columns>
+      <underlying-index>posts_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="62" parent="35" name="version">
+      <state-number>387533</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar|0</data-type>
+    </column>
+    <index id="63" parent="35" name="schema_migrations_pkey">
+      <object-id>27481</object-id>
+      <columns>version</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="64" parent="35" name="schema_migrations_pkey">
+      <object-id>27482</object-id>
+      <columns>version</columns>
+      <underlying-index>schema_migrations_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="65" parent="36" name="id">
+      <state-number>387540</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="66" parent="36" name="login">
+      <state-number>387540</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="67" parent="36" name="created_at">
+      <state-number>387540</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="68" parent="36" name="updated_at">
+      <state-number>387540</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="69" parent="36" name="users_pkey">
+      <object-id>27530</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="70" parent="36" name="index_users_on_login">
+      <object-id>27532</object-id>
+      <columns>login</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="71" parent="36" name="users_pkey">
+      <object-id>27531</object-id>
+      <columns>id</columns>
+      <underlying-index>users_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
